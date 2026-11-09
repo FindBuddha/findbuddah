@@ -1,5 +1,5 @@
-{ level: 11, image: "../assets/level11.png", top: "10%", left: "8%", width: "8%", height: "10%" },
-    { level: 12, image: "../assets/level12.png", top: "55%", left: "60%", width: "4%", height: "7%" }
+{ level: 11, image: "assets/level11.png", top: "10%", left: "8%", width: "8%", height: "10%" },
+    { level: 12, image: "assets/level12.png", top: "55%", left: "60%", width: "4%", height: "7%" }
 ];
 
 let currentLevelIndex = 0;
