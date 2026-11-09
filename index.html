@@ -1,0 +1,34 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindBuddha: The Ultimate Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero-banner">
+        <div class="hero-overlay">
+            <h1>FindBuddha</h1>
+            <p class="tagline">The Ultimate Search & Find Challenge Series</p>
+        </div>
+    </header>
+    
+    <main id="game-container">
+        <div class="status-bar">
+            <h2 id="level-title">Level 1</h2>
+            <p>Scan the crowd carefully. Can you spot him?</p>
+        </div>
+        
+        <div id="puzzle-wrapper">
+            <img id="puzzle-image" src="../assets/level01.png" alt="FindBuddha Puzzle Scene">
+            <div id="target-zone"></div>
+        </div>
+        
+        <p id="game-feedback"></p>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
