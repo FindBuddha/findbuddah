@@ -12,4 +12,5 @@ const levels = [
     { level: 11, image: "assets/level11.png", top: "22%", left: "60%", width: "5%", height: "7%" },
     { level: 12, image: "assets/level12.png", top: "45%", left: "80%", width: "6%", height: "8%" }
 ];
+ 
 
