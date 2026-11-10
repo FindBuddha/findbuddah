@@ -1,20 +1,28 @@
 const levels = [
-    { level: 1, image: "assets/level01.png", top: "62%", left: "58%", width: "10%", height: "12%", type: "single" },
-    { level: 2, image: "assets/level02.png", top: "75%", left: "80%", width: "10%", height: "12%", type: "single" },
+    { level: 1, image: "assets/level01.png", top: "62%", left: "62%", width: "10%", height: "12%", type: "single" }, // Shifted slightly RIGHT onto him
+    { level: 2, image: "assets/level02.png", top: "79%", left: "80%", width: "10%", height: "12%", type: "single" }, // Lowered slightly down over body
     { level: 3, image: "assets/level03.png", top: "42%", left: "75%", width: "12%", height: "15%", type: "single" },
     { level: 4, image: "assets/level04.png", top: "65%", left: "62%", width: "14%", height: "16%", type: "single" },
     { level: 5, image: "assets/level05.png", top: "78%", left: "75%", width: "14%", height: "16%", type: "single" },
     { level: 6, image: "assets/level06.png", top: "52%", left: "42%", width: "14%", height: "16%", type: "single" },
     { level: 7, image: "assets/level07.png", top: "12%", left: "82%", width: "14%", height: "16%", type: "single" },
     { level: 8, image: "assets/level08.png", top: "10%", left: "85%", width: "12%", height: "14%", type: "single" },
-    { level: 9, image: "assets/level09.png", top: "18%", left: "82%", width: "12%", height: "14%", type: "single" },
-    // LEVEL 10: Multi-character setup (Left top and lower corner)
+    { level: 9, image: "assets/level09.png", top: "18%", left: "86%", width: "12%", height: "14%", type: "single" }, // Shifted slightly RIGHT along shelf
+    // LEVEL 10: Shifted slightly LEFT to perfectly center over both targets
     { level: 10, image: "assets/level10.png", type: "multi", targets: [
-        { top: "12%", left: "15%", width: "12%", height: "14%", found: false },
-        { top: "70%", left: "15%", width: "12%", height: "14%", found: false }
+        { top: "12%", left: "11%", width: "12%", height: "14%", found: false },
+        { top: "70%", left: "11%", width: "12%", height: "14%", found: false }
     ]},
-    // LEVEL 11: Multi-character setup (Left top and lower corner)
+    // LEVEL 11: Shifted slightly LEFT to perfectly center over both targets
     { level: 11, image: "assets/level11.png", type: "multi", targets: [
+        { top: "12%", left: "11%", width: "12%", height: "14%", found: false },
+        { top: "70%", left: "11%", width: "12%", height: "14%", found: false }
+    ]},
+    { level: 12, image: "assets/level12.png", top: "78%", left: "82%", width: "14%", height: "16%", type: "single" } 
+];
+
+ 
+
         { top: "12%", left: "15%", width: "12%", height: "14%", found: false },
         { top: "70%", left: "15%", width: "12%", height: "14%", found: false }
     ]},
