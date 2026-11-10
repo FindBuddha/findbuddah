@@ -45,5 +45,3 @@ targetZone.addEventListener("click", () => {
 });
 
 loadLevel(currentLevelIndex);
-
- 
