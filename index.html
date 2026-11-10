@@ -1,34 +1,50 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FindBuddha: The Ultimate Challenge</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin:0; padding:0; background-color:#121212; color:#ffffff; font-family:sans-serif; text-align:center; }
+        header { background-color:#1a1a1a; padding:20px; border-bottom:3px solid #00bcd4; }
+        h1 { color:#00bcd4; margin:0 0 10px 0; }
+        #dashboard { display:flex; justify-content:space-around; max-width:800px; margin:15px auto; font-size:1.2rem; font-weight:bold; color:#ffeb3b; }
+        #puzzle-wrapper { position:relative; max-width:90vw; width:1000px; margin:20px auto; box-shadow:0 0 20px rgba(0,0,0,0.7); display:inline-block; }
+        #puzzle-image { width:100%; display:block; height:auto; }
+        #target-zone { position:absolute; border:none; cursor:pointer; z-index:10; }
+        #game-feedback { font-size:1.3rem; margin:15px; font-weight:bold; min-height:30px; }
+        footer { margin-top:40px; padding:20px; background-color:#1a1a1a; }
+        .sanctuary-btn { display:inline-block; padding:12px 24px; background-color:#00bcd4; color:#121212; font-weight:bold; text-decoration:none; border-radius:25px; transition:0.3s; margin-top:10px; }
+        .sanctuary-btn:hover { background-color:#ffeb3b; transform:scale(1.05); }
+    </style>
 </head>
 <body>
-    <header class="hero-banner">
-        <div class="hero-overlay">
-            <h1>FindBuddha</h1>
-            <p class="tagline">The Ultimate Search & Find Challenge Series</p>
-        </div>
-    </header>
-    
-    <main id="game-container">
-        <div class="status-bar">
-            <h2 id="level-title">Level 1</h2>
-            <p>Scan the crowd carefully. Can you spot him?</p>
-        </div>
-        
-        <div id="puzzle-wrapper">
-            <img id="puzzle-image" src="assets/level01.png" alt="FindBuddha Puzzle Scene">
-            <div id="target-zone"></div>
-        </div>
-        
-        <p id="game-feedback"></p>
-    </main>
 
-    <script src="game.js"></script>
+<header>
+    <h1>FindBuddha</h1>
+    <p>Scan the crowd carefully. Can you spot them?</p>
+</header>
+
+<div id="dashboard">
+    <div id="level-title">Level 1</div>
+    <div id="timer-display">Time Remaining: 5:00</div>
+</div>
+
+<div id="puzzle-wrapper">
+    <img id="puzzle-image" src="assets/level01.png" alt="FindBuddha Puzzle Scene">
+    <div id="target-zone"></div>
+</div>
+
+<div id="game-feedback"></div>
+
+<footer>
+    <h3>FindBuddha Sanctuary Hub</h3>
+    <p>Want to swap strategies, connect with the community, or check out our upcoming collection releases?</p>
+    <a href="https://discord.gg" target="_blank" class="sanctuary-btn">Join the Sanctuary Chat</a>
+</footer>
+
+<script src="game.js"></script>
 </body>
 </html>
+
+ 
