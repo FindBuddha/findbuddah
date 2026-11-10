@@ -1,5 +1,5 @@
 const levels = [
-    { level: 1, image: "assets/level01.png", top: "62%", left: "62%", width: "10%", height: "12%", type: "single" }, // Shifted slightly RIGHT onto him
+    { level: 1, image: "assets/level01.png", top: "62%", left: "60%", width: "10%", height: "12%", type: "single" }, // Perfectly centered now!
     { level: 2, image: "assets/level02.png", top: "79%", left: "80%", width: "10%", height: "12%", type: "single" }, // Lowered slightly down over body
     { level: 3, image: "assets/level03.png", top: "42%", left: "75%", width: "12%", height: "15%", type: "single" },
     { level: 4, image: "assets/level04.png", top: "65%", left: "62%", width: "14%", height: "16%", type: "single" },
