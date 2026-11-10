@@ -7,6 +7,42 @@ const levels = [
     { level: 6, image: "assets/level12.png", top: "45%", left: "80%", width: "6%", height: "8%" }
 ];
 
+let currentLevelIndex = 0;
+const puzzleImage = document.getElementById("puzzle-image");
+const targetZone = document.getElementById("target-zone");
+const levelTitle = document.getElementById("level-title");
+const feedback = document.getElementById("game-feedback");
+
+function loadLevel(index) {
+    const lvl = levels[index];
+    levelTitle.textContent = `Level ${lvl.level}`;
+    puzzleImage.src = lvl.image;
+    targetZone.style.top = lvl.top;
+    targetZone.style.left = lvl.left;
+    targetZone.style.width = lvl.width;
+    targetZone.style.height = lvl.height;
+    feedback.textContent = "";
+}
+
+targetZone.addEventListener("click", () => {
+    feedback.textContent = "Great job! Loading next layout...";
+    feedback.style.color = "#4CAF50";
+    setTimeout(() => {
+        currentLevelIndex++;
+        if (currentLevelIndex < levels.length) {
+            loadLevel(currentLevelIndex);
+        } else {
+            feedback.textContent = "Master Class Complete! You discovered every hidden target.";
+            targetZone.style.display = "none";
+        }
+    }, 1500);
+});
+
+loadLevel(currentLevelIndex);
+
+ 
+
+
   
  
 
